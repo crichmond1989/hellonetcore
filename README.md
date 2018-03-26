@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/crichmond1989/hellonetcore/master/dotnetcoredocker.png" />
+</p>
+
 [![Build Status](https://api.travis-ci.org/crichmond1989/hellonetcore.png?branch=master)](https://api.travis-ci.org/crichmond1989/hellonetcore.png)
 
 # Hello .NET Core
