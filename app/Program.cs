@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace hellonetcore {
-    class Program {
-        static void Main(string[] args) {
+namespace hellonetcore.app {
+    public class Program {
+        public static void Main(string[] args) {
             Console.WriteLine("Starting!");
 
             var delay = args?.FirstOrDefault();
