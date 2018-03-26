@@ -41,10 +41,19 @@ Run - [Docker Run](https://docs.docker.com/engine/reference/commandline/run/)
 docker run -i --rm hellonetcore:test {CLI_ARGS}
 ```
 
+Authenticate - [Docker Login](https://docs.docker.com/engine/reference/commandline/login/)
+```bash
+docker login {server}
+```
+* A token is stored until the user executes the `docker logout {server}` command.
+
 Upload - [Docker Push](https://docs.docker.com/engine/reference/commandline/push/)
 ```bash
 docker push hellonetcore:test
 ```
+* A Docker image name is typically a namespace/product pair, such as `microsoft/dotnet`.
+  * Docker Cloud: {Docker_ID}/{product}
+  * Azure: {Repository_Name}.azurecr.io/{product}
 
 ## Production
 Download - [Docker Pull](https://docs.docker.com/engine/reference/commandline/pull/)
