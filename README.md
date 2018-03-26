@@ -1,4 +1,8 @@
+[![Build Status](https://api.travis-ci.org/crichmond1989/hellonetcore.png?branch=master)](https://api.travis-ci.org/crichmond1989/hellonetcore.png)
+
 # Hello .NET Core
+
+An introduction to VirtualBox, Ubuntu, .NET Core, and Docker!
 
 ## Environment
 VirtualBox
