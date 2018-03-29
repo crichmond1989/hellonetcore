@@ -38,15 +38,15 @@ Run - [DotNet Run](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run
 dotnet run {CLI_ARGS}
 ```
 
-## Staging
+## Testing
 Build - [Docker Build](https://docs.docker.com/engine/reference/commandline/build/)
 ```bash
-docker build . -t hellonetcore:test
+docker build . -t crichmond1989/hellonetcore:test
 ```
 
 Run - [Docker Run](https://docs.docker.com/engine/reference/commandline/run/)
 ```bash
-docker run -i --rm hellonetcore:test {CLI_ARGS}
+docker run -i --rm crichmond1989/hellonetcore:test {CLI_ARGS}
 ```
 
 Authenticate - [Docker Login](https://docs.docker.com/engine/reference/commandline/login/)
@@ -57,19 +57,34 @@ docker login {server}
 
 Upload - [Docker Push](https://docs.docker.com/engine/reference/commandline/push/)
 ```bash
-docker push hellonetcore:test
+docker push crichmond1989/hellonetcore:test
 ```
 * A Docker image name is typically a namespace/product pair, such as `microsoft/dotnet`.
   * Docker Cloud: {Docker_ID}/{product}
   * Azure: {Repository_Name}.azurecr.io/{product}
-
-## Production
+  
 Download - [Docker Pull](https://docs.docker.com/engine/reference/commandline/pull/)
 ```bash
-docker pull hellonetcore:test
+docker pull crichmond1989/hellonetcore:test
+```
+
+## Production
+Tag - [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
+```bash
+docker tag crichmond1989/hellonetcore:test crichmond1989/hellonetcore:latest
+```
+
+Upload
+```bash
+docker push crichmond1989/hellonetcore:latest
+```
+
+Download
+```bash
+docker pull crichmond1989/hellonetcore:latest
 ```
 
 Run
 ```bash
-docker run -i --rm hellonetcore:test {CLI_ARGS}
+docker run -i --rm crichmond1989/hellonetcore:latest {CLI_ARGS}
 ```
