@@ -3,7 +3,7 @@ import groovy.lang.Script
 @Library("testit")
 import testit.FunTest
 
-void call(Map args) {
+class JenkinsCIFunTests implements Serializable {
     Script script
 
     @FunTest
