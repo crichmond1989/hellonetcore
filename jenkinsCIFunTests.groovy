@@ -21,4 +21,4 @@ class JenkinsCIFunTests implements Serializable {
     }
 }
 
-return this
+return new JenkinsCIFunTests()
