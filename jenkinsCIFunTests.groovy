@@ -25,7 +25,7 @@ class JenkinsCIFunTests implements Serializable {
 
     @Test
     void testResultsExist() {
-        final resultsPath = "tests/TestResults/TestResults.xml"
+        final resultsPath = "tests/TestResults/TestResults.trx"
         
         assert script.fileExists(resultsPath)
     }
